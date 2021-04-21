@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#000000">
+  <title>meus contatos | treinar.me</title>
+  <meta name="description" content="Mobilekit HTML Mobile UI Kit">
+  <meta name="keywords" content="bootstrap 5, mobile template, cordova, phonegap, mobile, html" />
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/192x192.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="manifest" href="__manifest.json">
+</head>
+
+<body>
+
+  <!-- loader -->
+  <div id="loader">
+    <div class="spinner-border text-primary" role="status"></div>
+  </div>
+  <!-- * loader -->
+
+  <!-- App Header -->
+  <div class="appHeader not-fixed bg-primary text-light">
+    <div class="left">
+      <a href="#" class="headerButton goBack">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </a>
+    </div>
+    <div class="pageTitle">meus contatos</div>
+    <div class="right">
+      <a href="#" class="headerButton" onclick="toastbox('marcar-lead-com-estrela', 3000);">
+        <ion-icon name="star"></ion-icon>
+      </a>
+    </div>
+  </div>
+  <!-- * App Header -->
+
+  <!-- App Capsule -->
+  <div id="appCapsule" class="full-height not-fixed mb-2">
+
+    <div class="section full mt-3 mb-3">
+      <div class="section-title">
+        Nathalia Eduarda, 31 anos
+        <span class="badge badge-warning">pendente</span>
+      </div>
+      <div class="section font-12">recebido hoje às 11h20</div>
+
+      <div class="wide-block font-14 mt-1 pt-2 pb-2">
+        "Preciso emagrecer entorno de uns 27 kg mais ou menos, tenho bastante dor na coluna, segundo o ortopedista do pronto socorro que passei, no momento não é pra eu fazer aeróbio, pois se eu perder mais massa eu vou travar a coluna, falou pra fazer só coisas que vão fortaceler e ganhar músculo."
+      </div>
+
+      <div class="listview-title text-primary mt-2">Entrar em contato</div>
+      <ul class="listview image-listview">
+        <li>
+          <a href="#" class="item">
+            <div class="icon-box bg-whatsapp">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </div>
+            <div class="in">
+              12 98817-2690<span class="text-muted text-primary">enviar whatsapp</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="item">
+            <div class="icon-box bg-secondary">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="in">
+              nathaliae.s@hotmail.com<span class="text-muted">e-mail</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="listview-title mt-2">Detalhes</div>
+    <ul class="listview image-listview">
+      <li>
+        <a href="#" class="item">
+          <div class="icon-box">
+            <ion-icon name="location-outline"></ion-icon>
+          </div>
+          <div class="in">
+            Vila Mariana
+            <span class="text-muted">mapa</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <span class="item">
+          <div class="icon-box">
+            <ion-icon name="time-outline"></ion-icon>
+          </div>
+          <div class="in">
+            Horários: 7h
+          </div>
+        </span>
+      </li>
+      <li>
+        <span class="item">
+          <div class="icon-box">
+            <ion-icon name="warning-outline"></ion-icon>
+          </div>
+          <div class="in">
+            Início nos próximos dias
+          </div>
+        </span>
+      </li>
+      <li>
+        <a href="#" class="item">
+          <div class="icon-box">
+            <ion-icon name="diamond-outline" class="text-primary"></ion-icon>
+          </div>
+          <div class="in text-primary">
+            Não há concorrência
+            <span class="text-muted">ver mais</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+
+
+    <div class="listview-title mt-2">Ações</div>
+    <div class="section">
+      <div class="card">
+        <ul class="listview flush transparent image-listview">
+          <li>
+            <a href="#" class="item">
+              <div class="icon-box">
+                <ion-icon name="pricetags-outline"></ion-icon>
+              </div>
+              <div class="in">
+                Mudar status
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="item" onclick="toastbox('marcar-lead-com-estrela', 3000);">
+              <div class="icon-box">
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
+              <div class="in">
+                <div>Remover dos favoritos</div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="item">
+              <div class="icon-box">
+                <ion-icon name="trash-outline"></ion-icon>
+              </div>
+              <div class="in">
+                <div>Apagar contato</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <!-- * App Capsule -->
+
+
+  <!-- Toast bottom iconed -->
+  <div id="marcar-lead-com-estrela" class="toast-box toast-bottom">
+    <div class="in">
+      <ion-icon name="checkmark-circle" class="text-success"></ion-icon>
+      <div class="text">
+        Contato marcado com estrela
+      </div>
+    </div>
+    <button type="button" class="btn btn-sm btn-text-light close-button">OK</button>
+  </div>
+  <!-- * toast bottom iconed -->
+
+
+  <!-- App Bottom Menu -->
+  <div class="appBottomMenu">
+    <a href="index.html" class="item">
+      <div class="col">
+        <ion-icon name="home-outline"></ion-icon>
+        <strong>Resumo</strong>
+      </div>
+    </a>
+    <a href="contatos.html" class="item active">
+      <div class="col">
+        <ion-icon name="people-outline"></ion-icon>
+        <strong>Contatos</strong>
+      </div>
+    </a>
+    <a href="avaliacoes.html" class="item">
+      <div class="col">
+        <ion-icon name="star-outline"></ion-icon>
+        <strong>Avaliações</strong>
+      </div>
+    </a>
+    <a href="configuracoes.html" class="item">
+      <div class="col">
+        <ion-icon name="settings-outline"></ion-icon>
+        <strong>Minha conta</strong>
+      </div>
+    </a>
+  </div>
+  <!-- * App Bottom Menu -->
+
+  <!-- ============== Js Files ==============  -->
+  <!-- Bootstrap -->
+  <script src="assets/js/lib/bootstrap.min.js"></script>
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+  <!-- Splide -->
+  <script src="assets/js/plugins/splide/splide.min.js"></script>
+  <!-- ProgressBar js -->
+  <script src="assets/js/plugins/progressbar-js/progressbar.min.js"></script>
+  <!-- Base Js File -->
+  <script src="assets/js/base.js"></script>
+
+</body>
+
+</html>
