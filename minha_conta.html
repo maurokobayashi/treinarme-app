@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="theme-color" content="#000000">
-  <title>meus contatos | treinar.me</title>
+  <title>minha conta | treinar.me</title>
   <meta name="description" content="Mobilekit HTML Mobile UI Kit">
   <meta name="keywords" content="bootstrap 5, mobile template, cordova, phonegap, mobile, html" />
   <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
@@ -32,75 +32,46 @@
         <ion-icon name="chevron-back-outline"></ion-icon>
       </a>
     </div>
-    <div class="pageTitle">meus contatos</div>
+    <div class="pageTitle">minha conta</div>
     <div class="right">
     </div>
   </div>
   <!-- * App Header -->
 
-  <!-- Extra Header -->
-  <div class="extraHeader">
-    <form class="search-form" action="contatos_buscar.html" autocomplete="off">
-      <div class="form-group searchbox">
-          <input type="text" id="search-input" class="form-control search rounded" placeholder="Buscar por nome..." value="leandro">
-          <i class="input-icon">
-            <ion-icon name="search-outline"></ion-icon>
-          </i>
-        </div>
-      </div>
-    </form>
-  </div>
-  <!-- * Extra Header -->
 
   <!-- App Capsule -->
-  <div id="appCapsule" class="extra-header-active">
+  <div id="appCapsule">
 
-    <div class="listview-title mt-2">
-      <div>
-        3 resultados para <strong class="text-primary">"leandro"</strong>
-      </div>
-    </div>
-    <ul class="listview link-listview search-result mb-2">
+    <div class="listview-title mt-2">Configurações da conta</div>
+    <ul class="listview link-listview">
       <li>
-        <a href="contato.html">
-          <div>
-            <h5 class="mb-05">Leandro Gomes</h5>
-            <div class="text-secondary">
-              <div class="text-secondary mt-05"><strong>pendente</strong></div>
-            </div>
-          </div>
-          <span class="text-muted">há 2h</span>
+        <a href="conta_anuncio.html">
+          <span class="text-secondary">Anúncio</span>
+          <span class="text-success"><span class="font-18 wieght-700 me-05">&bullet;</span>ativo</span>
         </a>
       </li>
       <li>
-        <a href="contato.html">
-          <div>
-            <h5 class="mb-05">Leandro Maciel Silva Jr.</h5>
-            <div class="text-secondary">
-              <div class="text-success mt-05"><strong>contrato fechado</strong></div>
-            </div>
-          </div>
-          <span class="text-muted">21 mar 2021</span>
+        <a href="conta_dados_pessoais.html">
+          <span class="text-secondary">Dados pessoais</span>
         </a>
       </li>
       <li>
-        <a href="contato.html">
-          <div>
-            <h5 class="mb-05">Leandro Nascimento Oliveira</h5>
-            <div class="text-secondary">
-              <div class="text-secondary mt-05"><strong>aguardando retorno</strong></div>
-            </div>
-          </div>
-          <span class="text-muted">11 dez 2020</span>
+        <a href="conta_assinatura.html">
+          <span class="text-secondary">Assinatura</span>
+        </a>
+      </li>
+      <li>
+        <a href="conta_notificacoes.html">
+          <span class="text-secondary">Notificações</span>
+        </a>
+      </li>
+      <li>
+        <a href="conta_senha.html">
+          <span class="text-secondary">Alterar senha</span>
         </a>
       </li>
     </ul>
 
-    <div class="section">
-      <a href="contatos.html">
-        <button type="button" class="btn btn-outline-primary btn-block">Voltar aos contatos recebidos</button>
-      </a>
-    </div>
   </div>
   <!-- * App Capsule -->
 
@@ -112,10 +83,10 @@
         <strong>Resumo</strong>
       </div>
     </a>
-    <a href="contatos.html" class="item active">
+    <a href="contatos.html" class="item">
       <div class="col">
         <ion-icon name="people-outline"></ion-icon>
-        <span class="badge badge-danger">1</span>
+        <!-- <span class="badge badge-danger">5</span> -->
         <strong>Contatos</strong>
       </div>
     </a>
@@ -125,7 +96,7 @@
         <strong>Avaliações</strong>
       </div>
     </a>
-    <a href="minha_conta.html" class="item">
+    <a href="minha_conta.html" class="item active">
       <div class="col">
         <ion-icon name="settings-outline"></ion-icon>
         <strong>Minha conta</strong>
@@ -133,6 +104,7 @@
     </a>
   </div>
   <!-- * App Bottom Menu -->
+
 
   <!-- ============== Js Files ==============  -->
   <!-- Bootstrap -->
