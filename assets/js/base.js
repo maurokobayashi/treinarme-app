@@ -493,8 +493,8 @@ if (document.body.contains(appHeader)) {
 // Offline Mode / Online Mode Detection
 
 // You can change the text here
-var OnlineText = "Connected to Internet";
-var OfflineText = "No Internet Connection";
+var OnlineText = "Conectado à internet";
+var OfflineText = "Sem conexão de internet";
 
 // Online Mode Toast Append
 function onlineModeToast() {
@@ -553,7 +553,7 @@ function onlineMode() {
     })
     setTimeout(() => {
         toast.classList.remove("show")
-    }, 3000);
+    }, 4000);
 }
 
 // Online Mode Function
@@ -569,7 +569,7 @@ function offlineMode() {
     })
     setTimeout(() => {
         toast.classList.remove("show")
-    }, 3000);
+    }, 4000);
 }
 
 // Check with event listener if online or offline

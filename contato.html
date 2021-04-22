@@ -32,10 +32,10 @@
         <ion-icon name="chevron-back-outline"></ion-icon>
       </a>
     </div>
-    <div class="pageTitle">meus contatos</div>
+    <div class="pageTitle">Contatos</div>
     <div class="right">
-      <a href="#" class="headerButton" onclick="toastbox('marcar-lead-com-estrela', 3000);">
-        <ion-icon name="heart"></ion-icon>
+      <a href="#" class="headerButton" data-bs-toggle="modal" data-bs-target="#action-sheet-opcoes">
+        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
       </a>
     </div>
   </div>
@@ -47,7 +47,7 @@
     <div class="section full mt-3 mb-3">
       <div class="section-title">
         Nathalia Eduarda, 31 anos
-        <span class="badge badge-warning">pendente</span>
+        <span class="badge badge-primary weight-600">aula teste</span>
       </div>
       <div class="section font-12">recebido hoje às 11h20</div>
 
@@ -174,7 +174,7 @@
     <div class="in">
       <ion-icon name="checkmark-circle" class="text-success"></ion-icon>
       <div class="text">
-        Contato adicionado aos favoritos
+        Contato removido dos favoritos
       </div>
     </div>
     <button type="button" class="btn btn-sm btn-text-light close-button">OK</button>
@@ -210,6 +210,47 @@
     </a>
   </div>
   <!-- * App Bottom Menu -->
+
+  <!-- Action sheet opções -->
+  <div class="modal fade action-sheet" id="action-sheet-opcoes" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Opções</h5>
+        </div>
+        <div class="modal-body">
+          <ul class="action-button-list">
+            <li>
+              <a href="/sobre-nos" class="btn btn-list vibrate">
+                <span>
+                  <ion-icon name="help-circle-outline"></ion-icon>
+                  Suporte
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="/sair" class="btn btn-list text-danger vibrate" onclick="mp_track('submit.signout');">
+                <span>
+                  <ion-icon name="log-out-outline" role="img" class="md hydrated" aria-label="copy outline"></ion-icon>
+                  Sair da conta
+                </span>
+              </a>
+            </li>
+            <li class="action-divider"></li>
+            <li>
+              <a href="#" class="btn btn-list" data-bs-dismiss="modal">
+                <span>
+                  <ion-icon name="close-outline"></ion-icon>
+                  Fechar
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- * Action sheet opções -->
 
   <!-- ============== Js Files ==============  -->
   <!-- Bootstrap -->
